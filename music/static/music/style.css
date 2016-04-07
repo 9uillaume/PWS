@@ -1,3 +1,15 @@
 body {
   background-color: #CFD8DC;
 }
+
+.glyphicon-tasks {
+  color: white;
+}
+
+.navbar {
+  border-radius: 0;
+}
+
+.navbar-brand {
+  font-family: 'Chewy' sans-serif;
+}
