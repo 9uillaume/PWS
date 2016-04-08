@@ -1,14 +1,18 @@
 {% extends 'music/base.html' %}
 
 {% block body %}
-  {% if all_albums %}
-    <h4>Here my albums :</h4>
-    <ul>
+
+    <ul class="gallery">
       {% for album in all_albums %}
-      <li><a href="{% url 'music:detail' album.id %}">{{ album.album_title }}</a></li>
+      <li>
+        <a href="{% url 'music:detail' album.id %}">
+          <img src="{{ album.album_logo }}"/>
+            <span class="name">{{ album.album_title }}
+              <span class="title">{{ album.artist }}</span>
+            </span>
+        </a>
+      </li>
       {% endfor %}
     </ul>
-  {% else %}
-    <h4>No vibes for the moment.</h4>
-  {% endif %}
+
 {% endblock %}
