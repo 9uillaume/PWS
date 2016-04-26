@@ -6,7 +6,7 @@
       {% for album in all_albums %}
       <li>
         <a href="{% url 'music:detail' album.id %}">
-          <img src="{{ album.album_logo }}"/>
+          <img class="img-responsive" src="{{ album.album_logo.url }}"/> <!-- .url -->
             <span class="name">{{ album.album_title }}
               <span class="title">{{ album.artist }}</span>
             </span>

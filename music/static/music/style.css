@@ -1,16 +1,12 @@
 body {
   background-color: #424242;
+  background: cover no-repeat;
   background-image: url("https://f4mmedia.files.wordpress.com/2014/09/blurs-n-mo-0-00-14-08.jpg");
 }
 
 ul {
   list-style-type: none;
-  /*margin: -2px auto;*/
-}
-
-img {
-  width: 300px;
-  height: 300px;
+  margin: -2px;
 }
 
 .glyphicon-tasks {
